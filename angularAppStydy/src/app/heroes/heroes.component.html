@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let class of ClassList" #dom (click)=onChoose(class,dom)><h3>{{class.F_ClassName}}</h3></li>  
+</ul>
+<app-heroes-detail [classInfo]="classInfo"  #heroDetail></app-heroes-detail>
+
