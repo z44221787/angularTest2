@@ -9,7 +9,11 @@ export class HeroesDetailComponent implements OnInit {
   @Input() classInfo:any;
   constructor() { }
 
-  setSay=(msg)=>console.log(msg);
+  setSay=(msg:string)=>console.log(msg);
+
+  spanStyle=(style:{}={ "color":"red",'font-size': '22px',})=>{
+    return style;
+  }
 
   ngOnInit() {
   }

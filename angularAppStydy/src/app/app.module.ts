@@ -6,6 +6,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HttpModule } from '@angular/http';
 import {HttpClientModule} from '@angular/common/http';
 import { HeroesDetailComponent } from './heroes-detail/heroes-detail.component';
+import {FormsModule} from '@angular/forms';
 // import { httpInterceptorProviders } from './http-interceptors/index';
 
 @NgModule({
@@ -17,7 +18,8 @@ import { HeroesDetailComponent } from './heroes-detail/heroes-detail.component';
   imports: [
     BrowserModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     // httpInterceptorProviders

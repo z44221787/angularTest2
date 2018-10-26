@@ -20,8 +20,6 @@ export class HeroesComponent implements OnInit {
   onChoose(ClassInfo?:any,event?:any):void{
     this.classInfo=ClassInfo;
     this.event=event;
-    console.log(this.heroDetail.nativeElement);
-    console.log(this.children);
   }
 
   ngOnInit() {

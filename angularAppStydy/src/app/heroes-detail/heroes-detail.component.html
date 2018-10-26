@@ -1,1 +1,2 @@
-<span *ngIf="classInfo">你的选择是:{{classInfo.F_ClassName}}</span>
+<span [ngStyle]="spanStyle()" *ngIf="classInfo">你的选择是:{{classInfo.F_ClassName}}</span>
+<p *ngIf="classInfo" >修改文本<input type="text" value=""  [(ngModel)]="classInfo.F_ClassName"/></p>
